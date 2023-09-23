@@ -1,0 +1,56 @@
+<div class="container">
+  <h1 class="text-center my-5">
+    One Way Binding
+  </h1>
+
+  <h3>1- Text Interpolation</h3>
+  <p>" here is some masseges from the controller "</p>
+  <h6>
+    {{textInterpolationMessege}}
+  </h6>
+  <ul>
+    <li>{{iCanUseMath + (15+9)}}</li>
+    <li>{{iCanExecuteFunctions + (max(7,6))}}</li>
+    <li>{{"and other string functions like toUpperCase()".toUpperCase()}}</li>
+  </ul>
+  <h3 class="my-2">2- Property Binding</h3>
+  <p>
+    we often use this feature if we have some data for specific property in controller and want to use it in html
+  </p>
+  such as save image url in controller and use image tag to represent it
+  <br>
+  <img class="m-1" [src]="imgUrl" title="using property binding">
+  <img class="m-1" src="../assets/pics/dog.jpeg" title="without using property binding">
+
+
+
+
+
+
+  <h3 class="my-2">3 - Attribute Binding</h3>
+  <h6>
+    used to add attribue value
+  </h6>
+  <input class="form-control" type="" [attr.type]="inputType">
+  <!-- events will be explained later  but 
+    this example to show you the power of angular -->
+  <div class="text-center my-3">
+
+    <button (click)="changeInputType()" class="btn btn-info">Change the type of input</button>
+  </div>
+
+
+
+
+
+
+
+  <h3 class="my-2">4 - Event Binding</h3>
+  <p>
+    There are too many types of event we will take to examples first
+  </p>
+  <div class="text-center my-3">
+
+    <button (click)="sayHello()" class="btn btn-info">Click To Say Hello</button>
+  </div>
+</div>
