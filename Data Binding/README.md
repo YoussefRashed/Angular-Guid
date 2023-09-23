@@ -15,7 +15,9 @@ I can get data/event from html to do some processes in controller
 1) Text interpolation
 2) Event Bining
 3) Property Binding
-3) Attribute Binding
+4) Attribute Binding
+
+
 ![Alt text](image-1.png)
 
 
